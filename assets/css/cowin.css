@@ -1,0 +1,128 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#data {
+  display: flex;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+
+.card2 {
+  width: 240px !important;
+  height: 310px !important;
+  background-color: #d4d4d4;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  /* justify-content: center; */
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.card2:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+.con {
+  margin: 10px;
+}
+
+.centerId {
+  border-bottom: 2px solid rgba(117, 117, 117, 0.678);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: 300px;
+  grid-row-gap: 5px;
+}
+
+.text {
+  font-size: 400%;
+  display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 20px 0px;
+}
+
+.modiImg{
+    height: 300px;
+}
+
+@media screen and (max-width: 960px) {
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 200px;
+    grid-row-gap: 5px;
+  }
+
+  .text {
+    font-size: 200%;
+    display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 20px 0px;
+  }
+  .modiImg{
+      height: 300px;
+  }
+}
+
+@media screen and (max-width: 704px) {
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 100px;
+        grid-row-gap: 5px;
+    }
+  
+    .text {
+      font-size: 150%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 20px 0px;
+    }
+    .modiImg{
+        height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 578px) {
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 5px;
+    }
+  
+    .text {
+      font-size: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: 20px 0px;
+    }
+    .modiImg{
+        height: 100px;
+    }
+  }

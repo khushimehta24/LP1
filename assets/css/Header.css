@@ -1,0 +1,167 @@
+@keyframes pulse2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.myNav{
+    background-color: rgb(0, 0, 0);
+}
+
+.imgNav{
+    height: 40px;
+    width: 40px;
+}
+
+
+.btn{
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.658);
+    border: 2px solid rgb(248, 248, 248);
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+.btn span:after {
+    content: '\1F50E';
+    filter: grayscale(100%);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn:hover span {
+    padding-right: 25px;
+  }
+  
+  .btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+.form-control:focus{
+    box-shadow: 2px 2px 15px rgba(158, 158, 158, 0.486), -2px -2px 15px rgba(158, 158, 158, 0.486);
+}
+
+nav a:hover{
+  background-color: rgba(100, 100, 100, 0.575);
+  border-radius: 5px;
+}
+
+footer{
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  margin: 0px;
+  padding: 0px;
+  padding-top: 100%;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 1.5rem;
+  padding: 11px;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: rgb(227, 183, 248);
+  animation-name: pulse2;
+  animation-duration: 1s;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.footerh3::after{
+  content: "~by Khushi Mehta";
+  position: relative;
+  display: block;
+  top: 0;
+  left: 50px;
+  width: 100%;
+  height: 10px;
+  font-size: 10px;
+  font-family: monospace;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>covid Api</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../assets/css/Header.css">
+    <link rel="stylesheet" href="../assets/css/cowin.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark myNav sticky">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../images/logo.png" class="imgNav" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Web.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Call Directory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./covid.html">Cowin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tracker.html">Tracker</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 myFoc" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success mybtf" type="submit"><span>Search </span></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="info">
+        <div class="text">Are You Protected
+            Against COVID-19?</div>
+        <img src="../images/modi.png"  class="modiImg">
+    </div>
+    <div class="con container">
+        <form>
+            <input type="text" id="PinCode" placeholder="Enter Your Pin Code">
+            <button id="submit">Search</button>
+        </form>
+        <div id="data"></div>
+    </div>
+
+    <div class="footer bottom">
+        <footer>
+            <div class="footer-content">
+                <h3 class="footerh3">Main Page</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2020. designed by <span>Khushi Mehta</span></p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://kit.fontawesome.com/a365aa6db8.js" crossorigin="anonymous"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../JavaScript/covid.js"></script>
+    
+</body>
+
+</html>

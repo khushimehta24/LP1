@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap');
+
+@keyframes brighten{
+  0% {opacity:0.5}
+  100% {opacity:1}
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background-color: rgba(128, 128, 128, 0.733);
+  color: white;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+/* -------------header---------------- */
+header img {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  z-index: -1;
+  opacity: 0.66;
+  background-repeat: no-repeat;
+}
+
+
+/* --------------typewriter effect------------- */
+.wrapper {
+  height: 81vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typewriter {
+  color: black;
+  width: 32ch;
+  animation: typing 4s steps(22) infinite,
+    blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+
+/* -------------grid1------------- */
+
+.gridimg {
+  border-radius: 5px;
+  width: 80%;
+  object-fit: cover;
+}
+
+.gh4 {
+  text-align: center;
+  padding: 3px;
+  font-weight: bold;
+}
+
+.gp {
+  text-align: center;
+}
+
+.gridimg:hover {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+.gcontainer{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.txtcenter .gridimg{
+  width: 100%;
+}
+
+.txtcenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100%;
+  background-color: rgba(3, 3, 3, 0.589);
+  border-radius: 5px;
+  color: rgb(66, 66, 66);
+  /* padding: 4px 20px; */
+}
+
+.insidegrid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 230%;
+  color: white;
+  line-height: 1.8rem;
+}
+
+.insidegrid::after{
+  content: "-by Khushi Mehta";
+  font-family: monospace;
+  font-size: small;
+  position: absolute;
+  left: 48%;
+  display: block;
+  width: 100%;
+}
+
+.gcontainer .gridimg{
+  width: 100%;
+}
+
+/* -----------------Polaroid cards-------------- */
+
+.cards{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sheet{
+  background-color:white;
+  width:350px;
+  height:500px;
+  box-shadow: 5px 5px 4px 4px #757070;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  font-size:35px;
+  font-family:cursive;
+}
+
+.picture{
+   width:320px;
+  height:320px;
+  margin-top: 3%;
+  box-shadow: 0 0 6px #777;
+  border-radius: 5px;
+  background-color:#00000000;
+}
+
+.image{
+  background-size:cover;
+  height: 100%;
+  opacity:0.5;
+  object-fit: cover;
+}
+
+.image:hover{
+ animation-name:brighten ;
+  animation-duration:2s;
+    animation-fill-mode: forwards;
+  background-color:rgba(255, 0, 0, 0);
+}
+
+.cardcon{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.cardbg{
+  background-color: rgba(66, 66, 66, 0.11);
+  border: 2px dashed rgba(185, 185, 185, 0.438);
+  height: 61%;
+  width: 94%;
+  margin: 10% 3%;
+}
+
+.cardcon span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-size: 55%;
+  font-family: monospace;
+  border-radius: 5px;
+  color: rgb(66, 66, 66);
+}
+
+
+
+/* --------------- Music Info------------- */
+.musicinfo{
+  text-decoration: none;
+  background-color: rgba(100, 100, 100, 0.671);
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  scroll-behavior: smooth;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.musicinfo:hover{
+  background-color: rgba(100, 100, 100, 0.466);
+  color: white;
+}
+
+.slideheading{
+  /* text-align: center; */
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-weight: bold;
+}
+
+
+
+/* -------------history---------- */
+h5{
+  background-color: #1818189a;
+  color: rgb(201, 201, 201);
+  font-family: monospace;
+  padding: 10px;
+  width: 25%;
+  border-radius: 3px;
+}
+
+
+
+/* ------------- Types of music cards------------- */
+.TOMcards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+.TOMcardscon{
+  padding: 5px 20px;
+  text-align: center;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px #888888;
+}
+
+.TOMcardscon:hover{
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+
+
+/* --------------music card css-------------- */
+.gridmusiccard{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 5px;
+}
+
+.musiccardtxt{
+  font-family: monospace;
+  font-size: 85%;
+  color: rgb(255, 255, 255); 
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+}
+
+.musiccards{
+  background-color: rgba(0, 0, 0, 0.534);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px #888888;
+}
+
+.gridmusiccard .gridimg{
+  width: 150%;
+}
+
+.musicicons{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-column-gap: 13px;
+  padding: 0px 6px;
+  padding-left: 52px;
+  color: white;
+  opacity: 0.9;
+}
+
+
+
+/* ----------------------footer css----------------------- */
+footer{
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  margin: 0px;
+  padding: 0px;
+  padding-top: 100%;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 1.5rem;
+  padding: 11px;
+}
+
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+
+.socials a:hover i{
+  color: rgb(227, 183, 248);
+  animation-name: pulse2;
+  animation-duration: 1s;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.footerh3::after{
+  content: "~by Khushi Mehta";
+  position: relative;
+  display: block;
+  top: 0;
+  left: 50px;
+  width: 100%;
+  height: 10px;
+  font-size: 10px;
+  font-family: monospace;
+}
+
+
+
+/* -----------------Media Queries---------------- */
+@media screen and (max-width: 1238px){
+  .gridmusiccard{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 776px){
+  .gridmusiccard{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1130px){
+  .TOMcards{
+    grid-template-columns: 1fr 1fr ;
+  }
+}
+
+@media screen and (max-width: 447px){
+  .TOMcards{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1206px){
+  h5{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1206px){
+  h5{
+    width: 100%;
+  }
+}
